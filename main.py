@@ -9,7 +9,7 @@ ERR_MSG = "Error message: Invalid input. Make sure the input file is a valid csv
 
 def get_args() -> Type[ArgsNamespace]:
     parser = argparse.ArgumentParser()
-    parser.add_argument("-i", "--input", type=str, required=True)
+    parser.add_argument("-i", "--input_file", type=str, required=True)
     parser.add_argument("-o", "--output_file", type=str, required=True)
     parser.add_argument("-r", "--row_limit", type=int, required=True)
     return parser.parse_args(namespace=ArgsNamespace)
